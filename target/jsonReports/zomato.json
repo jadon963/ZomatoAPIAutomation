@@ -1,0 +1,1268 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-05-24T05:57:36.679Z",
+        "line": 11,
+        "name": "Verify co-ordinates by city",
+        "description": "",
+        "id": "validating-location-api-s;verify-co-ordinates-by-city;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 617000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User id ,\"Indore\" and parameter \"query\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Indore\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"query\"",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.user_id_and_parameter(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1516000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Users calls \"locationPath\" with \"Get\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"locationPath\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.usersCallsHttpRequest(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "API call got success with status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.apiCallGotSuccessWithStatusCodeAs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 490000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Verify \"title\" equals to \"Indore\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"title\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"Indore\"",
+                  "offset": 25
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.equalsTo(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LocationAPI"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-24T05:57:39.363Z",
+        "line": 22,
+        "name": "Verify Best rated restaurants",
+        "description": "",
+        "id": "validating-location-api-s;verify-best-rated-restaurants;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 760000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User id ,\"Indore\" and parameter \"entity_id\",\"entity_type\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Indore\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"entity_id\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"entity_type\"",
+                  "offset": 44
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.userIdAndParameter(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1272000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Users calls \"locationDetailsPath\" with \"Get\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"locationDetailsPath\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.usersCallsHttpRequest(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "API call got success with status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.apiCallGotSuccessWithStatusCodeAs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 81000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Verify \"Shree Gurukripa\"  in best rated restaurant",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Shree Gurukripa\"",
+                  "offset": 7
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.verifyInBestRatedRestaurant(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BestRestaurantTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-24T05:57:41.481Z",
+        "line": 23,
+        "name": "Verify Best rated restaurants",
+        "description": "",
+        "id": "validating-location-api-s;verify-best-rated-restaurants;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 797000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User id ,\"BENGALURU\" and parameter \"entity_id\",\"entity_type\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BENGALURU\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"entity_id\"",
+                  "offset": 35
+                },
+                {
+                  "val": "\"entity_type\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.userIdAndParameter(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1372000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Users calls \"locationDetailsPath\" with \"Get\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"locationDetailsPath\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.usersCallsHttpRequest(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "API call got success with status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.apiCallGotSuccessWithStatusCodeAs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 48000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Verify \"Meghana Foods\"  in best rated restaurant",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Meghana Foods\"",
+                  "offset": 7
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.verifyInBestRatedRestaurant(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BestRestaurantTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-24T05:57:43.702Z",
+        "line": 24,
+        "name": "Verify Best rated restaurants",
+        "description": "",
+        "id": "validating-location-api-s;verify-best-rated-restaurants;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 916000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User id ,\"BENGALURU\" and parameter \"entity_id\",\"entity_type\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BENGALURU\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"entity_id\"",
+                  "offset": 35
+                },
+                {
+                  "val": "\"entity_type\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.userIdAndParameter(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1089000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Users calls \"locationDetailsPath\" with \"Get\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"locationDetailsPath\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.usersCallsHttpRequest(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "API call got success with status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.apiCallGotSuccessWithStatusCodeAs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:87)\n\tat org.junit.Assert.fail(Assert.java:96)\n\tat stepDefinitions.LocationstepDefinition.verifyInBestRatedRestaurant(LocationstepDefinition.java:78)\n\tat ✽.Verify \"Shree Gurukripa\"  in best rated restaurant(file:///Users/neeraj.jadon/Documents/Test%20code/ZomatoApiAutomation/src/test/java/features/Location.feature:18)\n",
+              "duration": 43000000,
+              "status": "failed"
+            },
+            "line": 18,
+            "name": "Verify \"Shree Gurukripa\"  in best rated restaurant",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Shree Gurukripa\"",
+                  "offset": 7
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.verifyInBestRatedRestaurant(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BestRestaurantTest"
+          }
+        ]
+      }
+    ],
+    "name": "Validating Location API\u0027s",
+    "description": "",
+    "id": "validating-location-api-s",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Location.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-05-24T05:57:45.758Z",
+        "line": 11,
+        "name": "Verify no of restaurant in given city with price less than 2000 and aggregate_rating more than 4",
+        "description": "",
+        "id": "validating-restaurant-specific-scenario;verify-no-of-restaurant-in-given-city-with-price-less-than-2000-and-aggregate-rating-more-than-4;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 743000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User Id,\"Indore\",\"cost\" and parameters \"entity_id\",\"entity_type\",\"q\",\"sort\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Indore\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"cost\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"entity_id\"",
+                  "offset": 39
+                },
+                {
+                  "val": "\"entity_type\"",
+                  "offset": 51
+                },
+                {
+                  "val": "\"q\"",
+                  "offset": 65
+                },
+                {
+                  "val": "\"sort\"",
+                  "offset": 69
+                }
+              ],
+              "location": "stepDefinitions.RestaurantStepDefinitions.userIdAndParametersReview(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1677000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Users calls \"search\" with \"Get\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"search\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.usersCallsHttpRequest(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "API call got success with status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.apiCallGotSuccessWithStatusCodeAs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:87)\n\tat org.junit.Assert.fail(Assert.java:96)\n\tat stepDefinitions.RestaurantStepDefinitions.countRestaurantInGivenCityPriceAndRating(RestaurantStepDefinitions.java:47)\n\tat ✽.Verify restaurant is present below given \"500\" and rating above \"4\"(file:///Users/neeraj.jadon/Documents/Test%20code/ZomatoApiAutomation/src/test/java/features/Restaurant.feature:8)\n",
+              "duration": 127000000,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "Verify restaurant is present below given \"500\" and rating above \"4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"500\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"4\"",
+                  "offset": 64
+                }
+              ],
+              "location": "stepDefinitions.RestaurantStepDefinitions.countRestaurantInGivenCityPriceAndRating(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@searchTestOnPriceRating"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-24T05:57:48.312Z",
+        "line": 12,
+        "name": "Verify no of restaurant in given city with price less than 2000 and aggregate_rating more than 4",
+        "description": "",
+        "id": "validating-restaurant-specific-scenario;verify-no-of-restaurant-in-given-city-with-price-less-than-2000-and-aggregate-rating-more-than-4;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 761000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User Id,\"Indore\",\"cost\" and parameters \"entity_id\",\"entity_type\",\"q\",\"sort\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Indore\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"cost\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"entity_id\"",
+                  "offset": 39
+                },
+                {
+                  "val": "\"entity_type\"",
+                  "offset": 51
+                },
+                {
+                  "val": "\"q\"",
+                  "offset": 65
+                },
+                {
+                  "val": "\"sort\"",
+                  "offset": 69
+                }
+              ],
+              "location": "stepDefinitions.RestaurantStepDefinitions.userIdAndParametersReview(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1992000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Users calls \"search\" with \"Get\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"search\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.usersCallsHttpRequest(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "API call got success with status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.apiCallGotSuccessWithStatusCodeAs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 117000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Verify restaurant is present below given \"2000\" and rating above \"4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2000\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"4\"",
+                  "offset": 65
+                }
+              ],
+              "location": "stepDefinitions.RestaurantStepDefinitions.countRestaurantInGivenCityPriceAndRating(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@searchTestOnPriceRating"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-24T05:57:51.186Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.fetchRestaurantId()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Verify selected cuisine present in particular restaurant",
+        "description": "",
+        "id": "validating-restaurant-specific-scenario;verify-selected-cuisine-present-in-particular-restaurant;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User Id and parameter \"res_id\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"res_id\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinitions.RestaurantStepDefinitions.userIdAndParameter(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 927000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Users calls \"restaurant\" with \"Get\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"restaurant\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.usersCallsHttpRequest(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "API call got success with status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.apiCallGotSuccessWithStatusCodeAs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Verify if \"Chinese\" is present in particular restaurant",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Chinese\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinitions.RestaurantStepDefinitions.verifyIfIsPresentInParticularRestaurant(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@restaurantTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-24T05:57:52.128Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.fetchRestaurantId()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Verify selected cuisine present in particular restaurant",
+        "description": "",
+        "id": "validating-restaurant-specific-scenario;verify-selected-cuisine-present-in-particular-restaurant;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User Id and parameter \"res_id\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"res_id\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinitions.RestaurantStepDefinitions.userIdAndParameter(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 761000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Users calls \"restaurant\" with \"Get\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"restaurant\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.usersCallsHttpRequest(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "API call got success with status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.apiCallGotSuccessWithStatusCodeAs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:87)\n\tat org.junit.Assert.fail(Assert.java:96)\n\tat stepDefinitions.RestaurantStepDefinitions.verifyIfIsPresentInParticularRestaurant(RestaurantStepDefinitions.java:76)\n\tat ✽.Verify if \"xyz\" is present in particular restaurant(file:///Users/neeraj.jadon/Documents/Test%20code/ZomatoApiAutomation/src/test/java/features/Restaurant.feature:19)\n",
+              "duration": 8000000,
+              "status": "failed"
+            },
+            "line": 19,
+            "name": "Verify if \"xyz\" is present in particular restaurant",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"xyz\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinitions.RestaurantStepDefinitions.verifyIfIsPresentInParticularRestaurant(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@restaurantTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-24T05:57:52.901Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.fetchRestaurantId()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Verify given restaurant have specified highlight",
+        "description": "",
+        "id": "validating-restaurant-specific-scenario;verify-given-restaurant-have-specified-highlight;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User Id and parameter \"res_id\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"res_id\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinitions.RestaurantStepDefinitions.userIdAndParameter(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 918000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Users calls \"restaurant\" with \"Get\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"restaurant\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.usersCallsHttpRequest(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "API call got success with status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.apiCallGotSuccessWithStatusCodeAs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8000000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Verify restaurant should have specified highlight \"Fullbar\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Fullbar\"",
+                  "offset": 50
+                }
+              ],
+              "location": "stepDefinitions.RestaurantStepDefinitions.verifyRestaurantShouldHaveSpecifiedHighlight(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@restaurantTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-24T05:57:53.832Z",
+        "line": 43,
+        "name": "Verify given user review present in particular restaurant",
+        "description": "",
+        "id": "validating-restaurant-specific-scenario;verify-given-user-review-present-in-particular-restaurant;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User Id and parameter \"res_id\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"res_id\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinitions.RestaurantStepDefinitions.userIdAndParameter(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 746000000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Users calls \"reviews\" with \"Get\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"reviews\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.usersCallsHttpRequest(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "API call got success with status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.apiCallGotSuccessWithStatusCodeAs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Verify \"Pavneet Saluja\" is present in particular restaurant",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Pavneet Saluja\"",
+                  "offset": 7
+                }
+              ],
+              "location": "stepDefinitions.RestaurantStepDefinitions.verifyIsPresentInParticularRestaurant(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@reviewTest"
+          }
+        ]
+      }
+    ],
+    "name": "Validating restaurant specific scenario",
+    "description": "",
+    "id": "validating-restaurant-specific-scenario",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Restaurant.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-05-24T05:57:54.592Z",
+        "line": 11,
+        "name": "Verify restaurant have particular cuisine",
+        "description": "",
+        "id": "find-restaurant-by-search-api-s-using-common-api-s;verify-restaurant-have-particular-cuisine;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1547000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "UserId,\"Indore\" and list of cuisine",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Indore\"",
+                  "offset": 7
+                }
+              ],
+              "location": "stepDefinitions.RestaurantFinderStepDefinitions.userid(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Fetch the \"Afghan\" from cuisine list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Afghan\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinitions.RestaurantFinderStepDefinitions.fetchTheFromCuisineList(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1773000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Users calls \"search\" with \"Get\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"search\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.usersCallsHttpRequest(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "API call got success with status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.apiCallGotSuccessWithStatusCodeAs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 865000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Verify search result contains \"Afghan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Afghan\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.RestaurantFinderStepDefinitions.verifySearchResultContainsCuisine(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-24T05:57:58.796Z",
+        "line": 12,
+        "name": "Verify restaurant have particular cuisine",
+        "description": "",
+        "id": "find-restaurant-by-search-api-s-using-common-api-s;verify-restaurant-have-particular-cuisine;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1515000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "UserId,\"Indore\" and list of cuisine",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Indore\"",
+                  "offset": 7
+                }
+              ],
+              "location": "stepDefinitions.RestaurantFinderStepDefinitions.userid(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Fetch the \"xyz\" from cuisine list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"xyz\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinitions.RestaurantFinderStepDefinitions.fetchTheFromCuisineList(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1892000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Users calls \"search\" with \"Get\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"search\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.usersCallsHttpRequest(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "API call got success with status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.LocationstepDefinition.apiCallGotSuccessWithStatusCodeAs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:87)\n\tat org.junit.Assert.fail(Assert.java:96)\n\tat stepDefinitions.RestaurantFinderStepDefinitions.verifySearchResultContainsCuisine(RestaurantFinderStepDefinitions.java:51)\n\tat ✽.Verify search result contains \"xyz\"(file:///Users/neeraj.jadon/Documents/Test%20code/ZomatoApiAutomation/src/test/java/features/RestaurantFinder.feature:8)\n",
+              "duration": 1698000000,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "Verify search result contains \"xyz\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"xyz\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.RestaurantFinderStepDefinitions.verifySearchResultContainsCuisine(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Find restaurant by search API\u0027s using common API\u0027s",
+    "description": "",
+    "id": "find-restaurant-by-search-api-s-using-common-api-s",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/RestaurantFinder.feature",
+    "tags": []
+  }
+]

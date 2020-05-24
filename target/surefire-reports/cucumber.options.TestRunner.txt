@@ -1,0 +1,39 @@
+-------------------------------------------------------------------------------
+Test set: cucumber.options.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 26.576 sec <<< FAILURE!
+Verify Best rated restaurants(Validating Location API's)  Time elapsed: 2.34 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.fail(Assert.java:96)
+	at stepDefinitions.LocationstepDefinition.verifyInBestRatedRestaurant(LocationstepDefinition.java:78)
+	at ✽.Verify "Shree Gurukripa"  in best rated restaurant(file:///Users/neeraj.jadon/Documents/Test%20code/ZomatoApiAutomation/src/test/java/features/Location.feature:18)
+
+Verify no of restaurant in given city with price less than 2000 and aggregate_rating more than 4(Validating restaurant specific scenario)  Time elapsed: 2.665 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.fail(Assert.java:96)
+	at stepDefinitions.RestaurantStepDefinitions.countRestaurantInGivenCityPriceAndRating(RestaurantStepDefinitions.java:47)
+	at ✽.Verify restaurant is present below given "500" and rating above "4"(file:///Users/neeraj.jadon/Documents/Test%20code/ZomatoApiAutomation/src/test/java/features/Restaurant.feature:8)
+
+Verify selected cuisine present in particular restaurant(Validating restaurant specific scenario)  Time elapsed: 0.997 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.fail(Assert.java:96)
+	at stepDefinitions.RestaurantStepDefinitions.verifyIfIsPresentInParticularRestaurant(RestaurantStepDefinitions.java:76)
+	at ✽.Verify if "Mughlai" is present in particular restaurant(file:///Users/neeraj.jadon/Documents/Test%20code/ZomatoApiAutomation/src/test/java/features/Restaurant.feature:19)
+
+Verify selected cuisine present in particular restaurant(Validating restaurant specific scenario)  Time elapsed: 0.743 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.fail(Assert.java:96)
+	at stepDefinitions.RestaurantStepDefinitions.verifyIfIsPresentInParticularRestaurant(RestaurantStepDefinitions.java:76)
+	at ✽.Verify if "xyz" is present in particular restaurant(file:///Users/neeraj.jadon/Documents/Test%20code/ZomatoApiAutomation/src/test/java/features/Restaurant.feature:19)
+
+Verify restaurant have particular cuisine(Find restaurant by search API's using common API's)  Time elapsed: 4.715 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.fail(Assert.java:96)
+	at stepDefinitions.RestaurantFinderStepDefinitions.verifySearchResultContainsCuisine(RestaurantFinderStepDefinitions.java:51)
+	at ✽.Verify search result contains "xyz"(file:///Users/neeraj.jadon/Documents/Test%20code/ZomatoApiAutomation/src/test/java/features/RestaurantFinder.feature:8)
+
